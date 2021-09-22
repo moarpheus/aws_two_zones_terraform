@@ -58,3 +58,14 @@ provider "aws" {
   alias = "west"
 }
 
+#############################################################################
+# DATA SOURCES
+#############################################################################
+
+data "aws_availability_zones" "azs_east" {
+    provider = aws.east
+}
+
+data "aws_availability_zones" "azs_west" {
+    provider = aws.west
+}
