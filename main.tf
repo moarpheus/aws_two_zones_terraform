@@ -4,12 +4,12 @@
 
 variable "region_1" {
   type    = string
-  default = "eu-east-1"
+  default = "eu-west-1"
 }
 
 variable "region_2" {
   type    = string
-  default = "eu-west-1"
+  default = "eu-west-2"
 }
 
 variable "vpc_cidr_range_east" {
