@@ -129,3 +129,15 @@ module "vpc_west" {
   }
 
 }
+
+#############################################################################
+# OUTPUTS
+#############################################################################
+
+output "vpc_id_east" {
+  value = module.vpc_east.vpc_id
+}
+
+output "vpc_id_west" {
+  value = module.vpc_west.vpc_id
+}
