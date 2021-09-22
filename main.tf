@@ -41,3 +41,20 @@ variable "database_subnets_west" {
   type = list(string)
   default = ["10.11.8.0/24", "10.11.9.0/24"]
 }
+
+#############################################################################
+# PROVIDERS
+#############################################################################
+
+provider "aws" {
+  version = "~> 3.0"
+  region  = var.region_1
+  alias = "east"
+}
+
+provider "aws" {
+  version = "~> 3.0"
+  region  = var.region_2
+  alias = "west"
+}
+
